@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: Preguntas sobre el Imperio Romano</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    
+<header>
+    <h1>Bienvenidos al Imperio Romano</h1>
+    
+<nav>
+    <ul>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="cultura.html">Cultura</a></li>
+        <li><a href="ejercito.html">Ejército</a></li>
+        <li><a href="emperadores.html">Emperadores</a></li>
+        <li><a href="documental.html">Documental</a></li>
+        <li><a href="imagenes.html">Imágenes</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="cancion.html">Canción</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+    </ul>
+</nav>
+
+</header>
+
+    <section>
+        <h2>Formulario: Preguntas sobre el Imperio Romano</h2>
+    <form action="#" method="post">
+        <label for="nombre">¿Quién fue el primer emperador del Imperio Romano?</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+        <label for="anio">¿En qué año (antes de Cristo) comenzó el Imperio Romano?</label>
+        <input type="number" id="anio" name="anio" min="1" max="5000" required>
+
+        <br><br>
+        <label>¿En qué parte del Imperio Romano se encontraba Roma?</label><br>
+        <input type="radio" id="occidente" name="imperio" value="Occidente" required>
+        <label for="occidente">Occidente</label><br>
+        <input type="radio" id="oriente" name="imperio" value="Oriente">
+        <label for="oriente">Oriente</label><br>
+        <br><br>
+        <label for="participacion">¿Te interesa aprender más sobre el Imperio Romano?</label>
+        <input type="checkbox" id="participacion" name="participacion">
+        <label for="participacion">Sí, quiero saber más.</label>
+        <br><br>
+        <label for="comentarios">¿Qué opinas sobre el legado del Imperio Romano?</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    </section>
+    
+<footer>
+    <p>El Imperio Romano en 15 minutos</p>
+</footer>
+
+</body>
+</html>

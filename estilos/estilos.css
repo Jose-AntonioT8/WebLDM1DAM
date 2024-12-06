@@ -1,0 +1,211 @@
+/* Reset de estilo 
+   Elimina márgenes, rellenos y asegura un cálculo consistente del box model */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo general 
+   Define un fondo claro y texto oscuro para legibilidad */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header 
+   Estilo para el título principal, fuente serif y color amarillo */
+header h1 {
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 4em;
+    color: yellow;
+    font-weight: bold;
+    margin: 0; 
+}
+
+/* Barra de navegación 
+   Oculta los puntos de las listas y ajusta el espaciado */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+/* Estilo para los elementos de la lista en línea con espaciado entre ellos */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Links de la barra de navegación, con texto blanco y tamaño mayor */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* Efecto hover 
+   Cambia el color del link a dorado cuando el ratón pasa sobre él */
+nav ul li a:hover {
+    color: gold;
+}
+
+/* Tabla 
+   Define una tabla con bordes colapsados y ancho completo */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Bordes de la tabla */
+table, th, td {
+    border: 1px solid #000;
+}
+
+/* Alineación y espaciado dentro de celdas */
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para la cabecera de la tabla con fondo negro y texto blanco */
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Imágenes con texto asociado */
+.imagen-con-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 150px; /* Ancho base */
+}
+
+/* Imágenes cuadradas con ajuste automático */
+.imagen-con-texto img {
+    width: 100%; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+}
+
+/* Texto debajo de las imágenes */
+.imagen-con-texto p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Imagen destacada con mayor tamaño */
+.imagen-con-texto.grande {
+    width: 300px; 
+}
+
+/* Secciones usando flexbox para alineación y diseño responsive */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Iframe en secciones con margen */
+section iframe {
+    margin: 20px;
+}
+
+/* Títulos con colores específicos */
+section h2 {
+    color: lightseagreen;
+    animation: fadeIn 2s ease-in-out; /* Animación */
+}
+
+section h3 {
+    color: burlywood;
+}
+
+/* Lista con estilo personalizado */
+section ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+/* Pie de página fijo al final */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Sombras para los títulos */
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Bordes redondeados para imágenes */
+img {
+    border-radius: 10px;
+    opacity: 0.8; /* Opacidad inicial */
+}
+
+/* Efecto hover en imágenes */
+img:hover {
+    transform: scale(1.1); /* Ampliación */
+    transition: transform 0.3s ease; /* Suavidad */
+    opacity: 1; /* Opacidad total */
+}
+
+/* Navegación sticky para mantenerse visible al hacer scroll */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #000;
+}
+
+/* Pseudo-clases para enlaces en diferentes estados */
+a:link {
+    color: #fff; /* Enlace no visitado */
+}
+
+a:visited {
+    color: #ccc; /* Enlace visitado */
+}
+
+a:hover {
+    color: gold; /* Enlace al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* Fuente personalizada desde Google Fonts */
+@font-face {
+    font-family: "RomanFont";
+    src: url('https://fonts.googleapis.com/css2?family=Garamond&display=swap');
+}
+
+body {
+    font-family: 'RomanFont', serif; /* Aplicar la fuente */
+}
+
+/* Animación de opacidad progresiva */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
